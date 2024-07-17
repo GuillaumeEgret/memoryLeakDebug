@@ -7,6 +7,6 @@ it("finds rendered text", async () => {
   renderWithProviders(<Home />);
 
   expect(
-    await screen.findByText(/Welcome to the Joconde Bootstrap App/),
+    await screen.findByText(/Welcome to the DebugChallenge Bootstrap App/),
   ).toBeOnTheScreen();
 });

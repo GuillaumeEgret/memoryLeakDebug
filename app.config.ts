@@ -8,9 +8,9 @@ if (STAGE !== "dev" && STAGE !== "staging" && STAGE !== "production") {
 
 const appConfig_DEV = {
   // build-time configs like bundleId, appName, firebase config file path, etc... live there
-  bundleId: "joconde.dev",
-  appName: "Joconde DEV",
-  scheme: "joconde-dev",
+  bundleId: "debugChallenge.dev",
+  appName: "DebugChallenge DEV",
+  scheme: "debugChallenge-dev",
   waitForUpdateOnSplashScreenMs: 0,
   // run-time configs like API URL, feature flags, etc... should be put in `appEnv`. They are accessible from app code
   appEnv: {
@@ -22,17 +22,17 @@ const appConfig_DEV = {
 };
 
 const appConfig_STAGING: typeof appConfig_DEV = {
-  bundleId: "joconde.staging",
-  appName: "Joconde STAGING",
-  scheme: "joconde-staging",
+  bundleId: "debugChallenge.staging",
+  appName: "DebugChallenge STAGING",
+  scheme: "debugChallenge-staging",
   waitForUpdateOnSplashScreenMs: 300000, // try to always have the latest expo-update, wait up to 30 seconds for download (the max allowed)
   appEnv: appConfig_DEV.appEnv,
 };
 
 const appConfig_PRODUCTION: typeof appConfig_DEV = {
-  bundleId: "joconde",
-  appName: "Joconde",
-  scheme: "joconde",
+  bundleId: "debugChallenge",
+  appName: "DebugChallenge",
+  scheme: "debugChallenge",
   waitForUpdateOnSplashScreenMs: 10000,
   appEnv: {
     apiUrl: "https://myapi.com",
@@ -53,8 +53,8 @@ const appConfig = appConfigs[STAGE];
 export type AppEnv = (typeof appConfig_DEV)["appEnv"];
 
 const config: ExpoConfig = {
-  name: "joconde",
-  slug: "joconde",
+  name: "debugChallenge",
+  slug: "debugChallenge",
   scheme: appConfig.scheme,
   orientation: "portrait",
   icon: "./assets/icon.png",

@@ -20,7 +20,7 @@ export default function Home() {
           uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/402px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
         }}
       />
-      <Text>{t("Welcome to the Joconde Bootstrap App")}</Text>
+      <Text>{t("Welcome to the DebugChallenge Bootstrap App")}</Text>
       <Text>
         {t("date actuelle :")} {isoDate}
       </Text>

@@ -8794,9 +8794,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joconde@workspace:.":
+"debugChallenge@workspace:.":
   version: 0.0.0-use.local
-  resolution: "joconde@workspace:."
+  resolution: "debugChallenge@workspace:."
   dependencies:
     "@babel/core": "npm:^7.24.6"
     "@bam.tech/eslint-plugin": "npm:^6.0.0"
