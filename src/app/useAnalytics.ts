@@ -36,9 +36,10 @@ export const useAnalytics = () => {
     [nbEventC],
   );
 
-  // const memoryLeak = () => {
-  //   console.log("Memory leak", lastData?.length);
-  // };
+  // comment me to make the memory leak disappear
+  const memoryLeak = () => {
+    console.log("Memory leak", lastData?.length);
+  };
 
   useEffect(() => {
     eventEmitter.addListener("FakeEvent", (event) => {
